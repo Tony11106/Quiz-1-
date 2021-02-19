@@ -1,0 +1,55 @@
+# Tony Maldonado-Perez
+# amaldo36@uic.edu
+# I hereby attest that I have adhered to the rules for quizzes and projects as well as UIC's
+# Academic Integrity standards. Signed: Anthony Maldonado-Perez
+
+# Question 1 
+
+a = float(input("Please enter a value for a: "))
+b = float(input("Please enter a value for b: "))
+c = float(input("Please enter a value for c: "))
+x = float(input("Please enter a value for x: "))
+
+result = a*x**2 + b*x + c
+print("The value of the polynomial is")
+print(a, "x^2 + ", b, "x + ", c)
+print("at x =", x, "is", result)
+
+# Question 2
+
+grade_list = [[87, 69], [77, 91], [92, 88], [74, 63]]
+
+student = int(input("Which student would you like to see the score for?: "))
+exam = int(input("Which exam score would you like to see for that student: "))
+if student > 4 or student <= 0:
+    print("This is invalid")
+
+if exam <= 0 or exam > 2:
+    print("This is invalid")
+
+print("Student",student,"got a score of",grade_list[student-1][exam-1],"on exam",exam)
+
+# Question 3 
+
+first_name = input("Please enter your first name: ")
+last_name = input("Please en1ter your last name: ")
+birth_date = input("Please enter your birth date as MM/DD/YYYY where month and day are two digits: ")
+username = [first_name, last_name, "uic", birth_date]
+print(username[0][0]+ username[1][0]+username[2]+\
+      username[3][1]+username[3][4]+username[3][-2]+username[3][-1])
+
+# Question 4
+
+# x = input('Please enter a number that isn't negative: ')
+
+# int should be used before input
+# an if statement should be used to cause an error if negative number is applied
+
+# f(x) = x^0.5
+
+# x**0.5 should be used instead
+# replace f(x) with y because f(x) causes an error
+
+# print(The square root of x is, f(x))
+
+# print statement should be in quotations up into "is" then a comma should be used for the variable
